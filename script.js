@@ -45,4 +45,4 @@
   "2023/03/30",
 ];//
 
-alert(minDate(dates));
+//alert(minDate(dates));
