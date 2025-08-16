@@ -1,10 +1,18 @@
-function minDate(dates) {
-  //write you code here
+
+  function minDate(dates) {
+    if (!Array.isArray(dates) || dates.length === 0) {
+        return null; // Handle edge case: empty or invalid input
+    }
+
+    // Use the spread operator to avoid modifying the original array
+    return [...dates].sort()[0];
+
+
 }
 
 // Do not change the code
 
-var dates = [
+//var dates = [
   "2023/03/01",
   "2023/03/02",
   "2023/03/03",
@@ -35,6 +43,6 @@ var dates = [
   "2023/03/28",
   "2023/03/29",
   "2023/03/30",
-];
+];//
 
 alert(minDate(dates));
